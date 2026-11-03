@@ -4,7 +4,7 @@ import router from "../router";
 
 const api = axios.create({
   // Si no existe el archivo .env del frontend, usa el backend local por defecto.
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:4500/api",
+  baseURL: import.meta.env.VITE_API_URL || "/api",
   headers: { "Content-Type": "application/json" },
 });
 
